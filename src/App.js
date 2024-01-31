@@ -27,12 +27,12 @@ function App() {
         <button onClick={() => setStep((s) => s + 1)}>+</button> */}
       </div>
       <div>
-        <button onClick={() => setInput((i) => i - 1)}>-</button>
+        <button onClick={() => setInput((i) => i - Number(range))}>-</button>
         <input
           value={input}
           onChange={(e) => setInput(Number(e.target.value))}
         />
-        <button onClick={() => setInput((i) => i + 1)}>+</button>
+        <button onClick={() => setInput((i) => i + Number(range))}>+</button>
 
         {/* <button onClick={() => setCount((c) => c - step)}>-</button>
         Count: {count}
